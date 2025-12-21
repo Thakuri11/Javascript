@@ -2,9 +2,9 @@
 //Q.finding the max value in array
 let arr = [1, 2, 3, 100, 4];
 let max = arr[0];
-arr.forEach((el) => {
-  if (el > max) {
-    max = el;
+arr.forEach((e) => {
+  if (e > max) {
+    max = e;
   }
 });
 console.log(max);
@@ -29,6 +29,7 @@ document.getElementById("try").innerHTML="My name is " + obj.name +" and I am " 
 
 //change text when clicked!
 function ClickMe() {
+    document.getElementById("yo").style.backgroundColor="orange";
   document.getElementById("add").innerHTML = "Text changed!";
 }
 
@@ -37,3 +38,28 @@ const abc=document.getElementById("next");
 abc.addEventListener("click",function(){
     alert("Button Clicked!");
 })
+
+
+
+//Increment-Decrement Counter
+let count=0;
+//Increment
+document.getElementById("inc").addEventListener("click",()=>{
+document.getElementById("inc").style.backgroundColor="blue";
+count++;
+document.getElementById("cnt").innerHTML=count;
+})
+
+//Decrement
+document.getElementById("dec").addEventListener("click", () => {
+  document.getElementById("dec").style.backgroundColor = "blue";
+  count--;
+  document.getElementById("cnt").innerHTML = count;
+});
+
+//Reset
+document.getElementById("res").addEventListener("click", () => {
+  document.getElementById("res").style.backgroundColor = "blue";
+  count=0;
+  document.getElementById("cnt").innerHTML = count;
+});
