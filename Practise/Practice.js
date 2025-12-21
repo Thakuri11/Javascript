@@ -1,4 +1,3 @@
-
 //Q.finding the max value in array
 let arr = [1, 2, 3, 100, 4];
 let max = arr[0];
@@ -10,56 +9,52 @@ arr.forEach((e) => {
 console.log(max);
 
 //Q.Reverse the number
-let n =5011;
-let result=0;
-while(n>0){
-let b = n % 10;
-result=result*10 +b;
+let n = 5011;
+let result = 0;
+while (n > 0) {
+  let b = n % 10;
+  result = result * 10 + b;
 
- n = Math.floor(n / 10);
+  n = Math.floor(n / 10);
 }
 console.log(result);
 
 //Q. USe of objects
-const obj={
-    name:"Rahul",
-    age:"21"
+const obj = {
+  name: "Rahul",
+  age: "21",
 };
-document.getElementById("try").innerHTML="My name is " + obj.name +" and I am " +obj.age +" years old";
+document.getElementById("try").innerHTML =
+  "My name is " + obj.name + " and I am " + obj.age + " years old";
 
 //change text when clicked!
 function ClickMe() {
-    document.getElementById("yo").style.backgroundColor="orange";
   document.getElementById("add").innerHTML = "Text changed!";
 }
 
 //using addEventListener[perform without innnerHtml]
-const abc=document.getElementById("next");
-abc.addEventListener("click",function(){
-    alert("Button Clicked!");
-})
-
-
+const abc = document.getElementById("next");
+abc.addEventListener("click", function () {
+  alert("Button Clicked!");
+});
 
 //Increment-Decrement Counter
-let count=0;
+
+let count = 0;
 //Increment
-document.getElementById("inc").addEventListener("click",()=>{
-document.getElementById("inc").style.backgroundColor="blue";
-count++;
-document.getElementById("cnt").innerHTML=count;
-})
+document.getElementById("inc").addEventListener("click", () => {
+  count++;
+  document.getElementById("cnt").innerHTML = count;
+});
 
 //Decrement
 document.getElementById("dec").addEventListener("click", () => {
-  document.getElementById("dec").style.backgroundColor = "blue";
   count--;
   document.getElementById("cnt").innerHTML = count;
 });
 
 //Reset
 document.getElementById("res").addEventListener("click", () => {
-  document.getElementById("res").style.backgroundColor = "blue";
-  count=0;
+  count = 0;
   document.getElementById("cnt").innerHTML = count;
 });

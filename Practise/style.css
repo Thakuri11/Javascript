@@ -1,0 +1,14 @@
+button:hover{
+    cursor: pointer;
+    background-color:orange;
+}
+button{
+    height: 30px;
+    width: 75px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+#next{
+    height: auto;
+    width: auto;
+}
