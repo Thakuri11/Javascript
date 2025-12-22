@@ -48,5 +48,5 @@ document.getElementById("myf").addEventListener("click", function (event) {
 //2.event.preventDefault() [prevents from default behaviour of browser : like submit and reload in form submission]
 document.getElementById("myf2").addEventListener("click", function (event) {
   event.preventDefault();
-  alert("Form Submitted Denied!");
+  alert("Sorry !! Form Submission is Denied.");
 });
