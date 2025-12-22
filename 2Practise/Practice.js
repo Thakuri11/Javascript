@@ -58,3 +58,5 @@ document.getElementById("res").addEventListener("click", () => {
   count = 0;
   document.getElementById("cnt").innerHTML = count;
 });
+
+

@@ -1,3 +1,10 @@
+.dom{
+    height: 50px;
+    width: 52px;
+    margin: 4px;
+    padding: 5px;
+    border:2px solid black;
+}
 button:hover{
     cursor: pointer;
     background-color:orange;
@@ -7,8 +14,4 @@ button{
     width: 75px;
     border-radius: 4px;
     transition: background-color 0.3s;
-}
-#next{
-    height: auto;
-    width: auto;
 }
