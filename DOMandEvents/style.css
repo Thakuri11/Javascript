@@ -1,18 +1,26 @@
-.dom{
-    height: 50px;
-    width: 52px;
-    margin: 4px;
-    padding: 5px;
-    border:2px solid black;
+.dom {
+  height: 50px;
+  width: 52px;
+  margin: 4px;
+  padding: 5px;
+  border: 2px solid black;
 }
-button:hover{
-    cursor: pointer;
-    background-color:orange;
+button:hover {
+  cursor: pointer;
+  background-color: orange;
 }
-button{
-    height: 30px;
-    width: 75px;
-    border-radius: 9px;
-    transition: background-color 0.3s;
-  
+button {
+  height: 30px;
+  width: 75px;
+  border-radius: 9px;
+  transition: background-color 0.3s;
+}
+/* .app.button{
+    width: 500px;
+} */
+.app {
+  & button {
+    height: unset;
+    width: unset;
+  }
 }

@@ -29,6 +29,10 @@ function ClickMe() {
 function ClickMe2() {
   document.getElementById("txt").textContent = "I changed Again";
 }
+//3.innerText [only returns the visible text]
+// document.getElementById("demo").innerText;   
+
+
 
 // #Event Listener [ listen for an event and handle it]
 // Event is action done by user like:{click(),dblclick(),keyup(),keydown(),mouseover() and so on}
@@ -51,3 +55,24 @@ document.getElementById("myf2").addEventListener("click", function (event) {
   alert("Sorry !! Form Submission is Denied.");
 });
 
+//Traversing DOM [move through elements]
+//1.Parentnode
+const p = document.querySelector("p");
+console.log(p.parentNode);
+//2.parentElement
+console.log(p.parentElement);
+//3.children
+const parent = document.getElementById("parent");
+console.log(parent.children);
+//4.childnodes
+console.log(parent.childNodes);
+//5.firstelementchild
+console.log(parent.firstElementChild);
+//6.lastelementchild
+console.log(parent.lastElementChild);
+//7.nextelementsibling
+const nes=parent.firstElementChild;
+console.log(nes.nextElementSibling);
+//8.previouselementsibling
+const pes = parent.lastElementChild;
+console.log(pes.previousElementSibling);
