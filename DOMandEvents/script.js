@@ -30,9 +30,7 @@ function ClickMe2() {
   document.getElementById("txt").textContent = "I changed Again";
 }
 //3.innerText [only returns the visible text]
-// document.getElementById("demo").innerText;   
-
-
+// document.getElementById("demo").innerText;
 
 // #Event Listener [ listen for an event and handle it]
 // Event is action done by user like:{click(),dblclick(),keyup(),keydown(),mouseover() and so on}
@@ -43,9 +41,10 @@ eventh.addEventListener("click", function () {
 
 // #Event Object
 
-//1.event.target() [Refers the element that triggered the event..used to knonw which element was clicked]
+//1.event.target() [Refers the element that triggered the event..used to know which element was clicked]
 document.getElementById("myf").addEventListener("click", function (event) {
   console.log(event.target);
+  event.preventDefault();
   console.log("Form Submitted!");
 });
 
@@ -76,3 +75,19 @@ console.log(nes.nextElementSibling);
 //8.previouselementsibling
 const pes = parent.lastElementChild;
 console.log(pes.previousElementSibling);
+
+
+//Creating and Removing Elements
+let list = document.getElementById("list");
+
+document.getElementById("add").addEventListener("click", () => {
+  let li = document.createElement("li");
+  li.textContent = "New Item";
+  list.append(li);
+});
+
+document.getElementById("del").addEventListener("click", () => {
+  if(list.lastElementChild){
+    list.lastElementChild.remove();
+  }
+});
