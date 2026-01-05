@@ -78,6 +78,7 @@ console.log(pes.previousElementSibling);
 
 
 //Creating and Removing Elements
+
 let list = document.getElementById("list");
 
 document.getElementById("add").addEventListener("click", () => {

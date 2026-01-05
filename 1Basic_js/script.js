@@ -75,7 +75,7 @@ console.log(a.indexOf("p"));
 console.log(a.endsWith("a"));
 console.log(a.startsWith("a"));
 
-//Array    [Array are mutable]
+//Array    [Array are mutable]  [collection of variable data types]
 let arr = [1, 2, 3, 4, 5];
 console.log(arr);
 arr[1] = 11;
